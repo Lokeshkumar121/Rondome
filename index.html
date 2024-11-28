@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rondam</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#f0f1f4 50% , #f5a623 50%);
+}
+.container{width: 85vw;
+    background-color: #ffffff;
+    max-width: auto;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.5em;
+    box-shadow: 0 1.2em 2.8em rgba(0, 41, 22, 0.2);
+}
+#demo{
+    height: 10px;
+    background-color: #ffffff;
+    width: 10px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 110px;
+    left: 550px;
+    padding: 1.5em;
+    font-size: 30px;
+    font-display: inherit;
+    border-radius: 0.5em;
+    box-shadow: 0 1.2em 2.8em rgba(0, 41, 22, 0.2);
+    border: none;
+}
+#remo{
+    height: 20px;
+    background-color: #ffffff;
+    max-width: 20px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 240px;
+    left: 550px;
+    padding: 1.5em;
+    font-size: 30px;
+    border-radius: 0.5em;
+    box-shadow: 0 1.2em 2.8em rgba(0, 20, 102, 0.2);
+    border: none;
+}
+h1{
+    font-weight: lighter;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: brown;
+}
+h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btn1{
+    padding: 30px;
+    margin: 20px;
+    border: none;
+    font-size: 25px;
+}
+#btn2{
+   padding: 30px;
+   margin: 20px;
+   border: none;
+   font-size: 25px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <button id="btn1">your 1st experiment number is</button><br>
+            <button id="demo"></button>
+            <button id="btn2">your 2nd experiment number is</button><br>
+            <button id="remo"></button>
+        </div>
+    </div>
+<script>
+    let x = Math.floor((Math.random() * 4) + 1);
+document.getElementById("demo").innerHTML = x;
+let y = Math.floor((Math.random()* 3) + 5);
+document.getElementById("remo").innerHTML = y;
+</script>
+</body>
+</html>
